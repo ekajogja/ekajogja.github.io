@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Belajar Node</title>
+  <title>Instalasi dan Membuat Test App dengan Express.js | Belajar Node</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Belajar Node">
-<meta property="og:url" content="http://ekajogja.github.io/archives/2015/index.html">
+  <meta name="description" content="Express adalah web framework minimalis berbasis Node.
+Lihat contoh aplikasi yang dibangun dengan Express disini.
+
+
+Buat virtual environment sesuai panduan 00_nodeenv.md.
+
+Aktifkan dan masuk ke direkto">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Instalasi dan Membuat Test App dengan Express.js">
+<meta property="og:url" content="http://ekajogja.github.io/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/index.html">
 <meta property="og:site_name" content="Belajar Node">
-<meta property="og:description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
+<meta property="og:description" content="Express adalah web framework minimalis berbasis Node.
+Lihat contoh aplikasi yang dibangun dengan Express disini.
+
+
+Buat virtual environment sesuai panduan 00_nodeenv.md.
+
+Aktifkan dan masuk ke direkto">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Belajar Node">
-<meta name="twitter:description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
+<meta name="twitter:title" content="Instalasi dan Membuat Test App dengan Express.js">
+<meta name="twitter:description" content="Express adalah web framework minimalis berbasis Node.
+Lihat contoh aplikasi yang dibangun dengan Express disini.
+
+
+Buat virtual environment sesuai panduan 00_nodeenv.md.
+
+Aktifkan dan masuk ke direkto">
   
   
     <link rel="icon" href="/favicon.png">
@@ -63,12 +81,6 @@
     </table>
   </div>
   
-  <div id="header-sub" class="header-sub header-inner">
-    <div class="outer">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dari-Penulis/">Dari Penulis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-  
 </header>
     <div class="outer">
       <aside id="profile">
@@ -109,26 +121,15 @@
     </div>
   </div>
 </aside>
-      <section id="main">
-  
-  
-    
-    
-      
-        <div class="archive-year-wrap">
-          <i class="fa fa-calendar"></i>
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-    
-    <article id="post-Instalasi-dan-Membuat-Test-App-dengan-Express-js" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-Instalasi-dan-Membuat-Test-App-dengan-Express-js" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/">Instalasi dan Membuat Test App dengan Express.js</a>
+    <h1 class="article-title" itemprop="name">
+      Instalasi dan Membuat Test App dengan Express.js
     </h1>
   
 
@@ -200,120 +201,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    
-    
-    <article id="post-membuat-virtual-environment-untuk-node-js-dengan-nodeenv" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/">Membuat virtual environment untuk Node.js dengan nodeenv</a>
-    </h1>
+    <a href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Membuat virtual environment untuk Node.js dengan nodeenv</div>
+    </a>
   
+</nav>
 
-        <div class="article-meta">
-          <div class="article-date">
-  <i class="fa fa-calendar"></i>
-  <a href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/">
-    <time datetime="2015-03-24T02:47:47.000Z" itemprop="datePublished">2015-03-24</time>
-  </a>
-</div>
-          
-  <div class="article-category">
-  	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/Development/">Development</a>
-  </div>
-
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://github.com/ekalinin/nodeenv" target="_blank" rel="external"><strong>nodeenv</strong></a> adalah tool untuk membuat virtual environment Node.js.</p>
-<hr>
-<ul>
-<li><p>dependensi    —&gt; <code>python</code>, <code>pip</code></p>
-</li>
-<li><p>install    —&gt; <code>$ sudo pip install nodeenv</code></p>
-</li>
-<li><p>create    —&gt; <code>$ nodeenv --node=0.12.0 --prebuilt namaEnv</code></p>
-</li>
-<li><p>activate    —&gt; <code>$ . namaEnv/bin/activate</code></p>
-</li>
-<li><p>deactivate    —&gt; <code>(env) $ deactivate_node</code></p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ekajogja.github.io/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" data-id="ci7mzxyl50003wsmjv7jmh6p4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    
-    
-    <article id="post-halo-dunia" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/24/halo-dunia/">Halo Dunia</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          <div class="article-date">
-  <i class="fa fa-calendar"></i>
-  <a href="/2015/03/24/halo-dunia/">
-    <time datetime="2015-03-23T23:47:26.000Z" itemprop="datePublished">2015-03-24</time>
-  </a>
-</div>
-          
-  <div class="article-category">
-  	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/Dari-Penulis/">Dari Penulis</a>
-  </div>
-
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Selamat datang di <a href="http://ekajogja.github.io/" target="_blank" rel="external">Belajar Node</a>!</p>
-<p>Blog berbasis <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> dan di-host di <a href="https://github.com/ekajogja/ekajogja.github.io" target="_blank" rel="external">Github</a> ini dikelola oleh <a href="https://github.com/ekajogja/" target="_blank" rel="external">Eka Y Saputra</a> sebagai catatan belajar aplikasi berbasis <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>.</p>
-<p>Untuk berkomunikasi dengan penulis, silakan kirim email ke alamat yang ada <a href="https://github.com/ekajogja/" target="_blank" rel="external">di sini</a>.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ekajogja.github.io/2015/03/24/halo-dunia/" data-id="ci7mzxylb0006wsmj1noifzoo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
       
         <aside id="sidebar">

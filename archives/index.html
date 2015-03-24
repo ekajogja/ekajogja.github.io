@@ -65,7 +65,7 @@
   
   <div id="header-sub" class="header-sub header-inner">
     <div class="outer">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dari-penulis/">Dari Penulis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/development/">Development</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dari-Penulis/">Dari Penulis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
   
@@ -82,7 +82,7 @@
   	</div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        2
+        3
         <span>posts</span>
       </div>
       <div class="article-info-block">
@@ -120,6 +120,92 @@
           <a href="/archives/2015" class="archive-year">2015</a>
         </div>
     
+    <article id="post-Instalasi-dan-Membuat-Test-App-dengan-Express-js" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/">Instalasi dan Membuat Test App dengan Express.js</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+  <a href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/">
+    <time datetime="2015-03-24T07:43:20.000Z" itemprop="datePublished">2015-03-24</time>
+  </a>
+</div>
+          
+  <div class="article-category">
+  	<i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/Framework/">Framework</a>
+  </div>
+
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://expressjs.com/" target="_blank" rel="external">Express</a> adalah web framework minimalis berbasis Node.</p>
+<p>Lihat contoh aplikasi yang dibangun dengan Express <a href="http://expressjs.com/resources/applications.html" target="_blank" rel="external">disini</a>.</p>
+<hr>
+<ul>
+<li><p>Buat virtual environment sesuai panduan <a href="https://github.com/ekajogja/belajarNode/blob/master/00_nodeenv.md" target="_blank" rel="external">00_nodeenv.md</a>.</p>
+<blockquote>
+<p>Aktifkan dan masuk ke direktori tsb.</p>
+</blockquote>
+</li>
+<li><p>Buat direktori aplikasi dan masuki —&gt; <code>mkdir namaApp &amp;&amp; cd namaApp</code></p>
+</li>
+<li><p>Buat file <code>package.json</code> yang memuat identitas dan dependensi aplikasi —&gt; <code>npm init</code></p>
+<blockquote>
+<p>Jawab semua prompt untuk mengisi identitas aplikasi, atau cukup klik Enter untuk default value.<br>Is this ok? (yes) <code>yes</code></p>
+</blockquote>
+</li>
+<li><p>Instal Express —&gt; <code>sudo npm install express --save</code></p>
+</li>
+<li><p>Periksa bahwa Express telah tersimpan (otomatis) dalam daftar dependensi <code>package.json</code>. Kurang lebih begini:</p>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"namaApp"</span></span>,</span><br><span class="line">  "<span class="attribute">version</span>": <span class="value"><span class="string">"1.0.0"</span></span>,</span><br><span class="line">  "<span class="attribute">description</span>": <span class="value"><span class="string">""</span></span>,</span><br><span class="line">  "<span class="attribute">main</span>": <span class="value"><span class="string">"index.js"</span></span>,</span><br><span class="line">  "<span class="attribute">scripts</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">test</span>": <span class="value"><span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></span><br><span class="line">  </span>&#125;</span>,</span><br><span class="line">  "<span class="attribute">author</span>": <span class="value"><span class="string">""</span></span>,</span><br><span class="line">  "<span class="attribute">license</span>": <span class="value"><span class="string">"ISC"</span></span>,</span><br><span class="line">  "<span class="attribute">dependencies</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">express</span>": <span class="value"><span class="string">"^4.12.3"</span></span><br><span class="line">  </span>&#125;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Instal tool generator aplikasi —&gt; <code>sudo npm install express-generator</code></p>
+</li>
+<li><p>Bangun aplikasi —&gt; <code>express namaApp</code></p>
+<blockquote>
+<p>Otomatis membuat direktori anak “namaApp” di dalam direktori induk “namaApp”.</p>
+</blockquote>
+</li>
+<li><p>Masuk ke direktori anak dan instal dependensi —&gt; <code>cd namaApp &amp;&amp; sudo npm install</code></p>
+</li>
+<li><p>Jalankan aplikasi —&gt; <code>DEBUG=namaApp ./bin/www</code></p>
+<blockquote>
+<p>Buka <code>http://localhost:3000/</code> di browser untuk melihat pesan “Welcome to Express”.</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>Temukan referensi lanjut <a href="http://expressjs.com/resources/books-blogs.html" target="_blank" rel="external">di sini</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ekajogja.github.io/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/" data-id="ci7mzxykd0000wsmjo4xcg77m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    
+    
     <article id="post-membuat-virtual-environment-untuk-node-js-dengan-nodeenv" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -142,7 +228,7 @@
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/development/">Development</a>
+    <a class="article-category-link" href="/categories/Development/">Development</a>
   </div>
 
         </div>
@@ -168,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ekajogja.github.io/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" data-id="ci7mrtcx70003oqmjcgcsiayw" class="article-share-link">Share</a>
+      <a data-url="http://ekajogja.github.io/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" data-id="ci7mzxyl50003wsmjv7jmh6p4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -202,7 +288,7 @@
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/dari-penulis/">Dari Penulis</a>
+    <a class="article-category-link" href="/categories/Dari-Penulis/">Dari Penulis</a>
   </div>
 
         </div>
@@ -217,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ekajogja.github.io/2015/03/24/halo-dunia/" data-id="ci7mrtcvq0000oqmj6iikdfdq" class="article-share-link">Share</a>
+      <a data-url="http://ekajogja.github.io/2015/03/24/halo-dunia/" data-id="ci7mzxylb0006wsmj1noifzoo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -240,6 +326,21 @@
         
           <li>
             <div class="item-thumbnail">
+              <a href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Framework/">Framework</a></p>
+              <p class="item-title"><a href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/" class="title">Instalasi dan Membuat Test App dengan Express.js</a></p>
+              <p class="item-date"><time datetime="2015-03-24T07:43:20.000Z" itemprop="datePublished">2015-03-24</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
               <a href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
@@ -247,7 +348,7 @@
 </a>
             </div>
             <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/development/">Development</a></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a></p>
               <p class="item-title"><a href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" class="title">Membuat virtual environment untuk Node.js dengan nodeenv</a></p>
               <p class="item-date"><time datetime="2015-03-24T02:47:47.000Z" itemprop="datePublished">2015-03-24</time></p>
             </div>
@@ -262,7 +363,7 @@
 </a>
             </div>
             <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/dari-penulis/">Dari Penulis</a></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/Dari-Penulis/">Dari Penulis</a></p>
               <p class="item-title"><a href="/2015/03/24/halo-dunia/" class="title">Halo Dunia</a></p>
               <p class="item-date"><time datetime="2015-03-23T23:47:26.000Z" itemprop="datePublished">2015-03-24</time></p>
             </div>
@@ -277,7 +378,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dari-penulis/">Dari Penulis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/development/">Development</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dari-Penulis/">Dari Penulis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -290,7 +391,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
