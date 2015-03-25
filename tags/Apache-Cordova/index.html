@@ -3,38 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Membuat virtual environment untuk Node.js dengan nodeenv | Belajar Node</title>
+  <title>Belajar Node</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="nodeenv adalah tool untuk membuat virtual environment Node.js.
-
-
-dependensi    —&amp;gt; python, pip
-
-install    —&amp;gt; $ sudo pip install nodeenv
-
-create    —&amp;gt; $ nodeenv --node=0.12.0 --prebuilt namaEn">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Membuat virtual environment untuk Node.js dengan nodeenv">
-<meta property="og:url" content="http://ekajogja.github.io/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/index.html">
+  <meta name="description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Belajar Node">
+<meta property="og:url" content="http://ekajogja.github.io/tags/Apache-Cordova/index.html">
 <meta property="og:site_name" content="Belajar Node">
-<meta property="og:description" content="nodeenv adalah tool untuk membuat virtual environment Node.js.
-
-
-dependensi    —&amp;gt; python, pip
-
-install    —&amp;gt; $ sudo pip install nodeenv
-
-create    —&amp;gt; $ nodeenv --node=0.12.0 --prebuilt namaEn">
+<meta property="og:description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Membuat virtual environment untuk Node.js dengan nodeenv">
-<meta name="twitter:description" content="nodeenv adalah tool untuk membuat virtual environment Node.js.
-
-
-dependensi    —&amp;gt; python, pip
-
-install    —&amp;gt; $ sudo pip install nodeenv
-
-create    —&amp;gt; $ nodeenv --node=0.12.0 --prebuilt namaEn">
+<meta name="twitter:title" content="Belajar Node">
+<meta name="twitter:description" content="Catatan belajar instalasi, konfigurasi, dan penggunaan aplikasi berbasis Node.js">
   
   
     <link rel="icon" href="/favicon.png">
@@ -124,29 +103,40 @@ create    —&amp;gt; $ nodeenv --node=0.12.0 --prebuilt namaEn">
     </div>
   </div>
 </aside>
-      <section id="main"><article id="post-membuat-virtual-environment-untuk-node-js-dengan-nodeenv" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main">
+  
+  
+    
+    
+      
+        <div class="archive-year-wrap">
+          <i class="fa fa-calendar"></i>
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+    
+    <article id="post-Membangun-Hybrid-Android-App-dengan-Ionic-dan-Cordova" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Membuat virtual environment untuk Node.js dengan nodeenv
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/25/Membangun-Hybrid-Android-App-dengan-Ionic-dan-Cordova/">Membangun Hybrid Android App dengan Ionic dan Cordova</a>
     </h1>
   
 
         <div class="article-meta">
           <div class="article-date">
   <i class="fa fa-calendar"></i>
-  <a href="/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/">
-    <time datetime="2015-03-24T02:47:47.000Z" itemprop="datePublished">2015-03-24</time>
+  <a href="/2015/03/25/Membangun-Hybrid-Android-App-dengan-Ionic-dan-Cordova/">
+    <time datetime="2015-03-25T05:57:15.000Z" itemprop="datePublished">2015-03-25</time>
   </a>
 </div>
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/Development/">Development</a>
+    <a class="article-category-link" href="/categories/Mobile-App/">Mobile App</a>
   </div>
 
         </div>
@@ -154,53 +144,48 @@ create    —&amp;gt; $ nodeenv --node=0.12.0 --prebuilt namaEn">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://github.com/ekalinin/nodeenv" target="_blank" rel="external"><strong>nodeenv</strong></a> adalah tool untuk membuat virtual environment Node.js.</p>
-<hr>
+        <p><a href="http://ionicframework.com/" target="_blank" rel="external">Ionic Framework</a> adalah front-end SDK untuk membangun hybrid mobile app dengan HTML5.</p>
+<p><a href="http://cordova.apache.org/" target="_blank" rel="external">Apache Cordova</a> adalah platform untuk membangun native mobile app menggunakan HTML, CSS, dan JavaScript.</p>
+<p><strong>Instalasi</strong></p>
 <ul>
-<li><p>dependensi    —&gt; <code>python</code>, <code>pip</code></p>
+<li>Unduh dan jalankan script <a href="https://github.com/nraboy/ubuntu-ionic-installer" target="_blank" rel="external">ubuntu-ionic-installer</a> —&gt; <code>sudo ubuntu-ionic-installer.sh</code></li>
+</ul>
+<p><strong>Proses</strong></p>
+<ul>
+<li>Buat app     —&gt; <code>ionic start namaApp blank</code></li>
+</ul>
+<p>Opsional &gt; daftar ke Ionic &gt; login &gt; unggah app &gt; install Ionic View untuk live testing.</p>
+<ul>
+<li>Masuk ke direktori app &amp; instal ngCordova —&gt; <code>cd namaApp &amp;&amp; bower install ngCordova</code></li>
+</ul>
+<p>Opsional &gt; hanya jika UNMET DEPENDENCY —&gt; <code>sudo npm install gulp gulp-concat gulp-minify-css gulp-rename gulp-sass</code></p>
+<ul>
+<li><p>Kustomisasikan app dalam direktori <code>www</code></p>
 </li>
-<li><p>install    —&gt; <code>$ sudo pip install nodeenv</code></p>
+<li><p>Tentukan platform —&gt; <code>ionic platform add android</code></p>
 </li>
-<li><p>create    —&gt; <code>$ nodeenv --node=0.12.0 --prebuilt namaEnv</code></p>
+<li><p>Bangun app —&gt; <code>ionic build android</code></p>
 </li>
-<li><p>activate    —&gt; <code>$ . namaEnv/bin/activate</code></p>
-</li>
-<li><p>deactivate    —&gt; <code>(env) $ deactivate_node</code></p>
+<li><p>Emulator —&gt; <code>ionic emulate android</code></p>
 </li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ekajogja.github.io/2015/03/24/membuat-virtual-environment-untuk-node-js-dengan-nodeenv/" data-id="ci7of6xjv0003q4mjm9ghfmlr" class="article-share-link">Bagikan</a>
+      <a data-url="http://ekajogja.github.io/2015/03/25/Membangun-Hybrid-Android-App-dengan-Ionic-dan-Cordova/" data-id="ci7of6xk50009q4mjx6vt4n4u" class="article-share-link">Bagikan</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apache-Cordova/">Apache Cordova</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ionic-Framework/">Ionic Framework</a></li></ul>
+
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2015/03/24/Instalasi-dan-Membuat-Test-App-dengan-Express-js/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Instalasi dan Membuat Test App dengan Express.js
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/03/24/halo-dunia/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Halo Dunia</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
+
+  
+  
 </section>
       
         <aside id="sidebar">
